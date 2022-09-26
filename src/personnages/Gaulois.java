@@ -22,4 +22,11 @@ public class Gaulois {
 		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
 		romain.recevoirCoup(force / 3);
 	}
+	@Override
+	public String toString() {
+		return "Gaulois [nom=" + nom + ", force=" + force + ", effetPotion=" + effetPotion + "]";
+	}
+	public static void main(String[] args) {
+		//TODO faire main pour tester Gaulois
+	}
 }
