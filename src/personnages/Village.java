@@ -28,7 +28,7 @@ public class Village {
 		}
 		
 	}
-	public void trouverHabitant(int numéro) {
+	public void trouverHabitant(int numÃ©ro) {
 		
 	}
 }

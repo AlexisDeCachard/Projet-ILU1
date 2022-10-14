@@ -17,13 +17,13 @@ public class Chef {
 		 return nom; 
 	 } 
 	 public void parler(String texte) { 
-		 System.out.println(prendreParole() + "« " + texte + "»"); 
+		 System.out.println(prendreParole() + "<< " + texte + " >>"); 
 	 } 
 	 private String prendreParole() { 
 		 return "Le chef " + nom + " du village " + village.getNom() + " : "; 
 	 } 
 	 public void frapper(Romain romain) { 
-		 System.out.println(nom  +  "  envoie  un  grand  coup  dans  la  mâchoire  de  "  + romain.getNom()); 
+		 System.out.println(nom  +  "  envoie  un  grand  coup  dans  la  mÃ¢choire  de  "  + romain.getNom()); 
 		 romain.recevoirCoup(force / 3); 
 	 } 
 	 
