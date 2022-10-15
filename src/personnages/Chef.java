@@ -28,7 +28,7 @@ public class Chef {
 	 }
 	@Override
 	public String toString() {
-		return "Chef [nom=" + nom + ", force=" + force + ", village=" + village + "]";
+		return "Chef [nom = " + nom + ", force = " + force + ", village = " + village + "]";
 	} 
 	 
 }

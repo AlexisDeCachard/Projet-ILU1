@@ -1,8 +1,5 @@
 package personnages;
 
-import java.util.Arrays;
-import java.util.Iterator;
-
 public class Village {
 	private String nom;
 	private Chef chef;

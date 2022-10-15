@@ -26,7 +26,7 @@ public class Gaulois {
 	
 	@Override
 	public String toString() {
-		return "Gaulois [nom=" + nom + ", force=" + force + ", effetPotion=" + effetPotion + "]";
+		return "Gaulois [nom = " + nom + ", force = " + force + ", effetPotion = " + effetPotion + "]";
 	}
 	public void boirePotion(int forcePotion) {
 		effetPotion = forcePotion;
