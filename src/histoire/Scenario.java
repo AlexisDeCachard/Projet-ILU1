@@ -6,7 +6,7 @@ import personnages.Druide;
 
 public class Scenario {
 	public static void main(String[] args) {
-		Gaulois asterix = new Gaulois ( "Ast�rix" , 8);
+		Gaulois asterix = new Gaulois ( "Astérix" , 8);
 		Gaulois obelix = new Gaulois("Obélix", 20);
 		Romain minus = new Romain ("Minus" , 45);
 		Druide panoramix = new Druide("Panoramix", 5, 10);
