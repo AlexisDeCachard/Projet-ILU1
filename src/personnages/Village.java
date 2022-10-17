@@ -32,30 +32,30 @@ public class Village {
 		}
 	}
 	
-	public Gaulois trouverHabitant (int numÃ©roVillageois) {
-		return villageois[numÃ©roVillageois];
+	public Gaulois trouverHabitant (int numéroVillageois) {
+		return villageois[numéroVillageois];
 	}
 	
 	public void afficherVillageois() {
-		System.out.println("Dans le village du chef " + chef.getNom() + " vivent  les lÃ©gendaires gaulois :");
+		System.out.println("Dans le village du chef " + chef.getNom() + " vivent  les légendaires gaulois :");
 		for(int i =0; i <nbVillageois; i++) {
 			System.out.println(" -" + trouverHabitant(i).getNom());
 		}
 	}
 	
 	public static void main(String[] args) {
-		Village village = new Village("Village des IrrÃ©ductibles",30);
+		Village village = new Village("Village des Irréductibles",30);
 		//Gaulois gaulois = village.trouverHabitant(30); Exception out of bound
-		//L'exception ci-dessus a lieu car il y a trente emplacements dans la liste reprÃ©sentant le village, allant de 0 Ã  29. Donc 30 est au-delÃ .
+		//L'exception ci-dessus a lieu car il y a trente emplacements dans la liste représentant le village, allant de 0 à 29. Donc 30 est au-delà.
         Chef Abraracourcix = new Chef("Abraracourcix",6, village);
         village.setChef(Abraracourcix);
-        Gaulois asterix = new Gaulois("AstÃ©rix",8);
+        Gaulois asterix = new Gaulois("Astérix",8);
         village.ajouterHabitant(asterix);
         //Gaulois gaulois=village.trouverHabitant(1);
-        //System.out.println(gaulois); rÃ©sultat obtenu : null
-        //On obtient ce rÃ©sultat car AstÃ©rix est dans le village, Ã  la premiÃ¨re postion dans la liste, soit la position 0.
-        //Il n'y a donc pas de gaulois Ã  la position 1, mais Ã©tant donnÃ© que cette position a Ã©tÃ© initialisÃ©e, on obtient donc null et pas out of bound.
-        Gaulois obelix = new Gaulois("ObÃ©lix",25);
+        //System.out.println(gaulois); résultat obtenu : null
+        //On obtient ce résultat car Astérix est dans le village, Ã  la première position dans la liste, soit la position 0.
+        //Il n'y a donc pas de gaulois à la position 1, mais étant donné que cette position a été initialisée, on obtient donc null et pas out of bound.
+        Gaulois obelix = new Gaulois("Obélix",25);
         village.ajouterHabitant(obelix);
         village.afficherVillageois();
 	}
